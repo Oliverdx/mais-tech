@@ -8,10 +8,69 @@ import HamburgerMenu from "./HamburgerMenu";
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
-  return <header className="flex items-center h-20 w-full bg-header_bg">
+  const smoothScroll = (id: string) => {
+    const el = document.querySelector(id);
+    if (!el) return;
+
+    el.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  };
+
+  return <header id="top" className="flex items-center h-20 w-full bg-header_bg">
     <div className="flex w-5/6 h-20 items-center justify-between m-auto lg:w-[1000px] ">
 
       <HamburgerMenu isOpen={showMenu} openMenu={setShowMenu} />
+
+      <nav>
+        {showMenu && <ul className="absolute top-20 left-0 w-full bg-header_bg flex flex-col items-center gap-6 py-4 z-1">
+          <li>
+            <Link href="#about"
+              onClick={(e) => {
+                e.preventDefault();
+                smoothScroll("#about");
+                setShowMenu(false);
+              }}
+              className="cursor-pointer text-dark_gray text-lg font-medium hover:text-light_gray">
+              Sobre Nós
+            </Link>
+          </li>
+          <li>
+            <Link href="#portaria"
+              onClick={(e) => {
+                e.preventDefault();
+                smoothScroll("#portaria");
+                setShowMenu(false);
+              }}
+              className="cursor-pointer text-dark_gray text-lg font-medium hover:text-light_gray">
+              Portaria Remota
+            </Link>
+          </li>
+          <li>
+            <Link href="#video-monitoramento"
+              onClick={(e) => {
+                e.preventDefault();
+                smoothScroll("#video-monitoramento");
+                setShowMenu(false);
+              }}
+              className="cursor-pointer text-dark_gray text-lg font-medium hover:text-light_gray">
+              Video Monitoramento
+            </Link>
+          </li>
+          <li>
+            <Link href="#alarme"
+              onClick={(e) => {
+                e.preventDefault();
+                smoothScroll("#alarme");
+                setShowMenu(false);
+              }}
+              className="cursor-pointer text-dark_gray text-lg font-medium hover:text-light_gray">
+              Alarme e Monitoramento
+            </Link>
+          </li>
+        </ul>}
+      </nav>
 
       <Link href="/">
         <Image

@@ -8,6 +8,7 @@ export interface service {
 }
 
 export interface ServiceProps {
+  serviceId: "portaria" | "video-monitoramento" | "alarme";
   type: "primary" | "secondary";
   title: string;
   breafing: string;
@@ -19,6 +20,7 @@ export interface ServiceProps {
 }
 
 function Service({
+  serviceId,
   type,
   title,
   breafing,
@@ -32,7 +34,7 @@ function Service({
   const isPrimary = type === "primary";
   const badgeBgColor = isPrimary ? "bg-[#B6B6B6]" : "bg-[#B3272D]";
 
-  return <div className={`relative text-sm ${showBadge ? "pt-44" : "pt-10"} px-4 ${isPrimary ? "bg-white" : "bg-main_red text-white"}`}>
+  return <div id={serviceId} className={`relative text-sm ${showBadge ? "pt-44" : "pt-10"} px-4 ${isPrimary ? "bg-white" : "bg-main_red text-white"}`}>
     <div className="md:max-w-[1000px] md:m-auto">
 
       {showBadge && <div className="absolute top-0 right-0 mt-4 mr-4 flex gap-4">

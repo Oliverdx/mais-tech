@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function About(){
   return (
-    <div className="mt-[-100px] relative z-2 p-8 md:max-w-[1000px] md:m-auto">
+    <div id="about" className="mt-[-100px] relative z-2 p-8 md:max-w-[1000px] md:m-auto">
       <Image
         src="/images/logo.png"
         alt="Logo Mais Tech"

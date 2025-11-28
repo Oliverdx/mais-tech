@@ -86,7 +86,7 @@ function Service({
       </div>
 
       {showConsult && (
-        <div className="flex flex-col items-center m-auto">
+        <div className="flex flex-col items-center m-auto md:items-end">
           <div className="flex justify-center items-center gap-2 mb-8 w-[300px]">
             <Image
               src={`/icons/contact_${isPrimary ? "red" : "white"}.png`}
@@ -118,7 +118,7 @@ function Service({
       )}
 
       {bgImage !== "" && (
-        <div className="flex align-end relative w-[350px] h-[255px] mt-10 m-auto md:w-[700px] md:h-[530px]">
+        <div className="flex align-end relative w-[350px] h-[255px] mt-10 m-auto md:w-[700px] md:h-[530px] md:mt-[-30px]">
           <Image
             src={bgImage}
             alt="Background Image"

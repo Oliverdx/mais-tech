@@ -1,0 +1,7 @@
+const PHONE_NUMBER = "tel:77981355022";
+const NUMBER_WHATSAPP = "https://wa.me/5577981355022";
+
+export {
+  PHONE_NUMBER,
+  NUMBER_WHATSAPP
+ }

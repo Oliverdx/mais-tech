@@ -25,7 +25,8 @@ const servicesList: ServiceProps[] = [
         }
       ],
       bgImage: "/images/portaria-bg.png",
-      showConsult: true
+      showConsult: true,
+      showBadge: true
   },
   {
       type: "primary",
@@ -53,7 +54,8 @@ const servicesList: ServiceProps[] = [
           icon: "/icons/inteligence_red.png",
           title: "Inteligência Tecnológica"
         }
-      ]
+      ],
+      showBadge: true
   },
   {
       type: "primary",

@@ -15,6 +15,7 @@ export interface ServiceProps {
   serviceList: service[];
   bgImage?: string;
   showConsult?: boolean;
+  showBadge?: boolean;
 }
 
 function Service({
@@ -24,12 +25,30 @@ function Service({
   description,
   serviceList,
   bgImage = "",
-  showConsult
+  showConsult,
+  showBadge = false,
 }: ServiceProps) {
 
   const isPrimary = type === "primary";
+  const badgeBgColor = isPrimary ? "bg-[#B6B6B6]" : "bg-[#B3272D]";
 
-  return <div className={`text-sm pt-8 px-4 mb-10 ${isPrimary ? "bg-white" : "bg-main_red text-white"}`}>
+  return <div className={`relative text-sm ${showBadge ? "pt-44" : "pt-10"} px-4 ${isPrimary ? "bg-white" : "bg-main_red text-white"}`}>
+
+    {showBadge && <div className="absolute top-0 right-0 mt-4 mr-4 flex gap-4">
+      <div className={`absolute top-[-16px] right-[24px] h-10 w-10 ${badgeBgColor}`}></div>
+      <div className="absolute top-[20px] right-[0px] flex flex-col w-22 gap-2 py-3 items-center bg-white rounded-xl border border-main_red">
+        <Image
+            src="/icons/metodologia_white.png"
+            alt="Metodologia Mais Tech de Riscos"
+            width={50}
+            height={50}
+            className="w-[40px] h-full object-contain z-2"
+          />
+
+          <span className="font-bold text-center uppercase text-dark_gray text-[10px] w-20">Metodologia Mais Tech em Segurança</span>
+      </div>
+    </div>}
+
     <div className="w-full">
       <h2 className="text-lg uppercase font-bold">{title}</h2>
 

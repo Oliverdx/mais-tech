@@ -13,7 +13,9 @@ import { MapPin } from "lucide-react";
 
 function Footer() {
   return <footer className="bg-main_red w-full py-10 mt-10">
-    <div className="flex flex-col justify-center w-11/12 m-auto justify-center text-white md:flex-row align-center md:items-center">
+    <div className="flex flex-col justify-center align-center w-11/12 m-auto justify-center text-white
+      md:flex-row md:items-center md:w-full md:max-w-[1000px] md:m-auto md:justify-between"
+    >
       <Image
         src="/images/logo-white.png"
         alt="Mais Tech Logo White"

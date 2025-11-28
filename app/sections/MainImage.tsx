@@ -2,8 +2,8 @@ import Image from "next/image";
 
 function MainImage() {
   return (
-    <div className="w-full flex flex-col align-center lg:w-[1200px] lg:h-[900px] lg:flex-row">
-      <div className="w-full relative lg:w-1/2">
+    <div className="w-full flex flex-col align-center md:max-w-[1000px] md:m-auto">
+      <div className="w-full relative">
         <Image
           src="/images/main_image.png"
           alt="Imagem Principal"
@@ -11,12 +11,12 @@ function MainImage() {
           height={900}
         />
       </div>
-      <div className="w-[300px] m-auto text-center border-l-2 border-r-2 border-main_red">
-        <p className="inline-block uppercase text-[12px] font-bold">Soluções em segurança eletrônica</p>
+      <div className="w-[300px] m-auto text-center border-l-2 border-r-2 border-main_red md:w-[600px]">
+        <p className="inline-block uppercase text-[12px] font-bold md:text-xl">Soluções em segurança eletrônica</p>
       </div>
 
-      <div className="w-full flex flex-col align-center mt-20 lg:w-[1200px] lg:h-[900px] lg:flex-row">
-        <div className="w-[300px] mb-10 m-auto flex flex-row items-center text-center">
+      <div className="w-full flex flex-col align-center mt-20">
+        <div className="w-[300px] mb-10 m-auto flex flex-row items-center text-center md:w-[600px]">
           <Image
             src="/images/shield.png"
             alt="Escudo Mais Tech"
@@ -24,9 +24,9 @@ function MainImage() {
             height={80}
             className="max-w-[70px] m-auto"
           />
-          <p className="inline-block uppercase mr-6 text-[12px] font-bold">Tranquilidade & segurança para sua vida</p>
+          <p className="inline-block uppercase mr-6 text-[12px] font-bold md:text-xl">Tranquilidade & segurança para sua vida</p>
         </div>
-        <div className="w-full relative lg:w-1/2">
+        <div className="w-full relative">
           <Image
             src="/images/secondary-banner.png"
             alt="Banner Secundario"

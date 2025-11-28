@@ -10,9 +10,9 @@ import Services from "./servicesList";
 export default function Home() {
 
   return (
-    <div className="md:hidden">
+    <div>
       <Header />
-      <main className="">
+      <main>
         <MainImage />
         <About />
         {Services.map((serviceItem, index) => 

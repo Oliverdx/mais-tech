@@ -6,7 +6,7 @@ export default function HamburgerMenu ({
   openMenu: (value: boolean) => void;
 }) {
   return (
-    <div className="md:hidden">
+    <div>
       <button
         onClick={() => openMenu(!isOpen)}
         aria-label="Menu"

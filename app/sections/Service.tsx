@@ -67,8 +67,8 @@ function Service({
           />
           <div>
             <p className="uppercase w-[145px] text-[12px]">Fale agora com <span className="inline-block">nosso consultores</span></p>
-            <Link href={PHONE_NUMBER} className={`uppercase font-bold text-xl ${isPrimary ? 'text-main_red' : 'text-white'}`}>
-                {PHONE_NUMBER.replace("tel:", "")}
+            <Link href={NUMBER_WHATSAPP} className={`uppercase font-bold text-xl ${isPrimary ? 'text-main_red' : 'text-white'}`}>
+                {PHONE_NUMBER}
             </Link>
           </div>
         </div>

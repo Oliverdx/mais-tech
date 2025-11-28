@@ -1,4 +1,4 @@
-const PHONE_NUMBER = "tel:77981355022";
+const PHONE_NUMBER = "77 98135-5022";
 const NUMBER_WHATSAPP = "https://wa.me/5577981355022";
 const INSTAGRAM = "maisgestaoservicos";
 const LOCATION = "Rua A, n. 115, Quadra B, Jardim Guanabara CEP 45026-275, Vitória da Conquista/BA";

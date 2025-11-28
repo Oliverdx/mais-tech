@@ -1,5 +1,6 @@
 'use client'
 
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import About from "./sections/About";
 import MainImage from "./sections/MainImage";
@@ -18,6 +19,7 @@ export default function Home() {
           <Service key={index} {...serviceItem}/>
         )}
       </main>
+      <Footer />
     </div>
   );
 }

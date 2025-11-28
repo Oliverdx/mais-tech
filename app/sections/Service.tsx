@@ -29,7 +29,7 @@ function Service({
 
   const isPrimary = type === "primary";
 
-  return <div className={`text-sm pt-8 px-4 ${isPrimary ? "bg-white" : "bg-main_red text-white"}`}>
+  return <div className={`text-sm pt-8 px-4 mb-10 ${isPrimary ? "bg-white" : "bg-main_red text-white"}`}>
     <div className="w-full">
       <h2 className="text-lg uppercase font-bold">{title}</h2>
 
@@ -78,7 +78,7 @@ function Service({
             alt="QR Code"
             width={200}
             height={200}
-            className="w-[100px] object-contain"
+            className={`w-[100px] object-contain ${isPrimary ? 'rounded border border-main_red' : ""}`}
           />
           <Link href={NUMBER_WHATSAPP} className={`text-[10px] rounded p-2 uppercase ${isPrimary ? 'bg-main_red text-white' : 'bg-white text-main_red'}`}>
             Clique e contrate agora

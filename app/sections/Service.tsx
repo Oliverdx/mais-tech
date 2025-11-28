@@ -118,12 +118,13 @@ function Service({
       )}
 
       {bgImage !== "" && (
-        <div className="flex align-end relative w-[350px] h-[255px] mt-10 m-auto">
+        <div className="flex align-end relative w-[350px] h-[255px] mt-10 m-auto md:w-[700px] md:h-[530px]">
           <Image
             src={bgImage}
             alt="Background Image"
-            width={400}
-            height={300}
+            width={700}
+            height={400}
+            className="md:object-contain md:w-full md:h-full"
           />
         </div>
       )}

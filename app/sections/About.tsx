@@ -15,7 +15,7 @@ function About(){
       </p>
 
       <Image
-        src="/images/about_image.png"
+        src="/images/about-image.png"
         alt="About Image"
         width={700}
         height={1000}

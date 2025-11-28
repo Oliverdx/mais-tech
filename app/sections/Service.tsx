@@ -40,7 +40,7 @@ function Service({
       <p>{description}</p>
 
       {serviceList.map((service, index) => (
-        <div key={index} className={`pb-2 flex items-center gap-4 my-4 border-b border-${isPrimary ? 'light_gray' : 'white'}`}>
+        <div key={index} className={`pb-2 flex items-center gap-4 ${index !== serviceList.length - 1 && `my-4 border-b border-${isPrimary ? 'light_gray' : 'white'}`}`}>
           <div className="w-[30px] h-[30px]">
             <Image
               src={service.icon}
@@ -53,11 +53,21 @@ function Service({
           <h3 className="text-[12px] uppercase">{service.title}</h3>
         </div>
       ))}
+      <div className="pb-2 flex items-center mt-2 mb-4">
+          <Image
+            src="/icons/metodologia_white.png"
+            alt="Metodologia Mais Tech de Riscos"
+            width={50}
+            height={50}
+            className="w-[35px] h-full object-contain z-2"
+          />
+        <h3 className={`text-[12px] uppercase font-bold h-[35px] flex items-center px-10 w-[300px] m-[-17px] bg-${isPrimary ? 'main_red' : 'white'}`} style={{color: isPrimary ? 'white' : 'var(--main-red)'}}>Metodologia Mais Tech de Riscos</h3>
+      </div>
     </div>
 
     {showConsult && (
-      <div className="flex flex-col items-end m-auto">
-        <div className="flex justify-end items-center gap-2 mb-8 w-[300px]">
+      <div className="flex flex-col items-center m-auto">
+        <div className="flex justify-center items-center gap-2 mb-8 w-[300px]">
           <Image
             src={`/icons/contact_${isPrimary ? "red" : "white"}.png`}
             alt="QR Code"
@@ -68,7 +78,7 @@ function Service({
           <div>
             <p className="uppercase w-[145px] text-[12px]">Fale agora com <span className="inline-block">nosso consultores</span></p>
             <Link href={NUMBER_WHATSAPP} className={`uppercase font-bold text-xl ${isPrimary ? 'text-main_red' : 'text-white'}`}>
-                {PHONE_NUMBER}
+              {PHONE_NUMBER}
             </Link>
           </div>
         </div>

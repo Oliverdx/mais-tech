@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Mais Tech",
     images: [
       {
-        url: "/images/og_image.png",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Mais Tech – automação de mensagens",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     site: "@soulplusdigital",
     title: "Mais Tech",
     description: "Soluções em Segurança Eletrônica",
-    images: ["/images/og_image.png"],
+    images: ["/images/og-image.png"],
   },
   robots: {
     index: true,

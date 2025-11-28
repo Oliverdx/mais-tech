@@ -23,13 +23,13 @@ function Service({
   breafing,
   description,
   serviceList,
-  bgImage,
+  bgImage = "",
   showConsult
 }: ServiceProps) {
 
   const isPrimary = type === "primary";
 
-  return <div className={`text-sm p-8 ${isPrimary ? "bg-white" : "bg-main_red text-white"}`}>
+  return <div className={`text-sm pt-8 px-4 ${isPrimary ? "bg-white" : "bg-main_red text-white"}`}>
     <div className="w-full">
       <h2 className="text-lg uppercase font-bold">{title}</h2>
 
@@ -56,8 +56,8 @@ function Service({
     </div>
 
     {showConsult && (
-      <div className="flex flex-col items-center m-auto">
-        <div className="flex items-center gap-2 mb-8 w-[300px]">
+      <div className="flex flex-col items-end m-auto">
+        <div className="flex justify-end items-center gap-2 mb-8 w-[300px]">
           <Image
             src={`/icons/contact_${isPrimary ? "red" : "white"}.png`}
             alt="QR Code"
@@ -66,7 +66,7 @@ function Service({
             className="w-[50px] object-contain"
           />
           <div>
-            <p className="uppercase text-[12px]">Fale agora com <span className="inline-block">nosso consultores</span></p>
+            <p className="uppercase w-[145px] text-[12px]">Fale agora com <span className="inline-block">nosso consultores</span></p>
             <Link href={PHONE_NUMBER} className={`uppercase font-bold text-xl ${isPrimary ? 'text-main_red' : 'text-white'}`}>
                 {PHONE_NUMBER.replace("tel:", "")}
             </Link>
@@ -87,13 +87,13 @@ function Service({
       </div>
     )}
 
-    {bgImage && (
-      <div className="absolute top-0 right-0 opacity-10 w-1/2 h-full overflow-hidden">
+    {bgImage !== "" && (
+      <div className="flex align-end relative w-[350px] h-[255px] mt-10 m-auto">
         <Image
           src={bgImage}
           alt="Background Image"
-          layout="fill"
-          objectFit="cover"
+          width={400}
+          height={300}
         />
       </div>
     )}

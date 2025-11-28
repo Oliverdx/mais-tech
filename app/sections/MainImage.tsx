@@ -28,7 +28,7 @@ function MainImage() {
         </div>
         <div className="w-full relative lg:w-1/2">
           <Image
-            src="/images/secondary_banner.png"
+            src="/images/secondary-banner.png"
             alt="Banner Secundario"
             width={1200}
             height={900}

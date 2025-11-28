@@ -24,7 +24,7 @@ const servicesList: ServiceProps[] = [
           title: "Inteligência Tecnológica"
         }
       ],
-      bgImage: "/images/portaria_bg.png",
+      bgImage: "/images/portaria-bg.png",
       showConsult: true
   },
   {
@@ -53,8 +53,7 @@ const servicesList: ServiceProps[] = [
           icon: "/icons/inteligence_red.png",
           title: "Inteligência Tecnológica"
         }
-      ],
-      bgImage: "/images/portaria_bg.png"
+      ]
   },
   {
       type: "primary",
@@ -79,7 +78,6 @@ const servicesList: ServiceProps[] = [
           title: "Inteligência Tecnológica"
         }
       ],
-      bgImage: "/images/portaria_bg.png",
       showConsult: true
   }
 

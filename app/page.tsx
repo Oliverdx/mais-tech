@@ -10,7 +10,7 @@ import Services from "./servicesList";
 export default function Home() {
 
   return (
-    <div className="">
+    <div className="md:hidden">
       <Header />
       <main className="">
         <MainImage />

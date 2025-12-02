@@ -1,5 +1,6 @@
 'use client'
 
+import BotButton from "./components/BotButton";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import About from "./sections/About";
@@ -18,6 +19,7 @@ export default function Home() {
         {Services.map((serviceItem, index) => 
           <Service key={index} {...serviceItem}/>
         )}
+        <BotButton />
       </main>
       <Footer />
     </div>

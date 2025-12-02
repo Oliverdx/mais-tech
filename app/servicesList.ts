@@ -57,7 +57,8 @@ const servicesList: ServiceProps[] = [
         title: "Inteligência Tecnológica"
       }
     ],
-    showBadge: true
+    showBadge: true,
+    showConsult: true
   },
   {
     serviceId: "alarme",

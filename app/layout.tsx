@@ -74,7 +74,7 @@ export default function RootLayout({
       >
         {children}
       </body>
-      {/* <Script
+      <Script
         id="ld-json"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -102,7 +102,7 @@ export default function RootLayout({
           });
         }
       `}
-      </Script> */}
+      </Script>
     </html>
   );
 }

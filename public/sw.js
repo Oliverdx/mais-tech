@@ -3,8 +3,8 @@
 // ================================
 
 // 🔄 Versão do cache (mude a cada build/deploy)
-const CACHE_VERSION = "v1.0";
-const CACHE_NAME = `soulsend-alpha-${CACHE_VERSION}`;
+const CACHE_VERSION = "v0.1.5";
+const CACHE_NAME = `mais-tech-${CACHE_VERSION}`;
 
 // 🕒 Tempos de expiração
 const HTML_TTL = 6 * 60 * 60 * 1000; // 6 horas

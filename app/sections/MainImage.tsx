@@ -26,15 +26,21 @@ function MainImage() {
           />
           <p className="inline-block uppercase mr-6 text-[12px] font-bold md:text-xl">Tranquilidade & segurança para sua vida</p>
         </div>
-        <div className="w-full relative">
-          <Image
-            src="/images/secondary-banner.png"
-            alt="Banner Secundario"
-            width={1200}
-            height={900}
-            className="px-10 relative z-0"
-          />
-        </div>
+          <div className="w-full max-w-[900px] relative">
+            <picture>
+              <source
+                srcSet="/images/secondary-banner.png"
+                media="(max-width: 900px)"
+              />
+              <Image
+                src="/images/secondary-banner-desktop.png"
+                alt="Banner"
+                width={1200}
+                height={900}
+                className="w-full"
+              />
+            </picture>
+          </div>
       </div>
     </div>
   )

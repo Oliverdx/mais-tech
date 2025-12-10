@@ -3,7 +3,7 @@
 // ================================
 
 // 🔄 Versão do cache (mude a cada build/deploy)
-const CACHE_VERSION = "v0.1.5";
+const CACHE_VERSION = "v0.1";
 const CACHE_NAME = `mais-tech-${CACHE_VERSION}`;
 
 // 🕒 Tempos de expiração

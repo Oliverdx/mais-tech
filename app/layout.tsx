@@ -20,14 +20,14 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Mais Tech | Soluções em Segurança Eletrônica",
   description: "Soluções em Segurança Eletrônica",
-  metadataBase: new URL("https://mais-tech-five.vercel.app"),
+  metadataBase: new URL("https://maistech.grupomais.srv.br"),
   icons: {
     icon: "/favicon.ico",
   },
   manifest: "/site.webmanifest",
   openGraph: {
     type: "website",
-    url: "https://mais-tech-five.vercel.app",
+    url: "https://maistech.grupomais.srv.br",
     title: "Mais Tech",
     description: "Soluções em Segurança Eletrônica",
     siteName: "Mais Tech",
@@ -82,8 +82,8 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "Mais Tech",
-            url: "https://mais-tech-five.vercel.app",
-            logo: `${"https://mais-tech-five.vercel.app"}/images/logo.png`,
+            url: "https://maistech.grupomais.srv.br",
+            logo: `${"https://maistech.grupomais.srv.br"}/images/logo.png`,
             sameAs: [
               INSTAGRAM
             ],
